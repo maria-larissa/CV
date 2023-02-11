@@ -48,6 +48,7 @@ a:hover, .contacts nav a:hover{
     text-align: center;
     padding-top: 4rem;
     flex-direction: column;
+    position: relative;
 }
 
 #front-cover img{
@@ -82,10 +83,18 @@ a:hover, .contacts nav a:hover{
     width: auto;
     text-transform: uppercase;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 3%;
     border:0.2rem solid black;
+    font-size: clamp(0.3rem, 0.6rem + 1vw, 1rem + 1vw);
+
 }
+
+
+
 /* MIDDLE */
 
 
@@ -93,24 +102,20 @@ a:hover, .contacts nav a:hover{
 
 
 /* FOOTER */
-.footer{
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+
+
+footer{
     text-align: center;
-    background-color: #cccccc;
-    flex-direction: column;
+    background: #cccccc;
+    width: 100vw;
+    padding: 2rem 0;
     /* background-color:transparent; */
-    /* display:inline-flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
-.text-footer{
-    font-size: clamp(0.5rem, 0.6rem + 1vw, 1rem);
+.text-footer, .copyrigth{
+    font-size: clamp(0.3rem, 0.5rem + 1vw, 1rem);
     color: black ;
 }
-
 
 .button-top{
     width: 20vw;
@@ -138,7 +143,7 @@ a:hover, .contacts nav a:hover{
     flex-direction: column;
 }
 
-.contacts .header{
+.contacts header{
     background-color: #CCCCCC;
     padding: 1rem 0; /* para itens não enconstar nas margens do header*/
 }
@@ -183,8 +188,6 @@ a:hover, .contacts nav a:hover{
     color: #8f12c9;
 }
 
-
-
 .list-contacts{
     width: 60%;
     margin: 0 auto;
@@ -195,10 +198,10 @@ a:hover, .contacts nav a:hover{
 .list-contacts li{
     display: inline-block;
     text-align: center;
-    width: 48%;
+    width: 45%;
     margin: 1%;
     background-color: #cccccc;
-    border: 0.2rem dashed black;
+    border: 0.2rem solid black;
     border-radius: 2rem;
     vertical-align: top;
     box-sizing: border-box;
@@ -211,7 +214,6 @@ a:hover, .contacts nav a:hover{
 .list-contacts li:active{
     border-color: #ee940e ;
 }
-
 
 .list-contacts .button-social-media img{
     width: 30%;
