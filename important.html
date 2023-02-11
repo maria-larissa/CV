@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas HTML/CSS</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul li{
+            margin-top: 1rem;
+        }
+        strong{
+            color:steelblue; 
+        }
+        em{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body style="font-size: 20px;">
+
+    <h1>Dicas HTML/CSS</h1>
+    <ul>
+        <li>Arquivo html são geralmente nomeados com "index.html"</li>
+
+        <li><strong>Texto em itálico</strong>: usamo o a tag <'em'></li>
+
+        <li><strong>Texto em negrito</strong>: usamo a tag <'strong'></li>
+
+        <li><strong>Tranformar stylo da fonte</strong>: usamos o comando 'font-weight:'</li>
+
+        <li><strong>Comportamento block</strong>: são tags que <em>bloqueiam o conteúdo</em> da linha inteira como li, lo.
+            <ul>
+                <li>Não permitem que alterem dimensões</li>
+                
+                <li>Permite alterar espaçamento interno e externo</li>
+
+                <li>uso "display:block"</li>
+            </ul>
+        </li>
+
+        <li> <strong>Comportamento inline</strong> São tags que <em>não bloqueiam o conteúdo</em> tod da linha, com img.
+        <ul>
+            <li>Permitem alterar dimensões</li>
+            <li>Não permitem alterar espaçamento interno e externo</li>
+            <li>uso "display:inline"</li>
+        </ul>
+        </li>
+
+        <li> <strong>Comportamento inline-block</strong> 
+            <ul>
+
+                <li>Ocupa somente o espaço do conteúdo.</li>
+                <li>Permitem alterar dimensões</li>
+                <li>Permitem alterar espaçamento interno e externo</li>
+                <li>uso "display:inline-block"</li>
+            </ul>
+        </li>
+
+        <li> <strong>Alinhamento de elementos no CSS</strong>: por <em>padrão</em>  todos os elementos no css <em>são alinhados pela linha de baixo.</em> 
+            <ul>
+                <li>Podemos alterar o formato do alinhamento</li>
+                <li>Uso "vertical-align:"</li>
+            </ul>
+        </li>
+
+        <li> <strong>Tag HEADER</strong>: foi uma tag <em>criada no HTML5</em>  que indica para o navegador que aquilo é o <em>cabeçalho</em>, ou seja a primeira informação que o usuário vai ver.</li>
+        
+        <li><strong> Importância das Classes</strong>: As classes criadas no Html tem o intuito de otimizar e reutilizar o stylo definido no css.
+            <ul>
+                <li>Assim, não iremos criar varios stylos desnecessário dentro do CSS.</li>
+                <li>Poderemos facilmente fazer a manutenção do código.</li>
+            </ul>
+        </li>
+
+        <li> <strong>Tag ANCOR <'a'></strong>: utilizamos para tornar realizável a navegação entre as páginas.</li>
+
+        <li> <strong>Tag <'nav'></strong>: é uma tag criada no HTML5 para criar um estilo de navegação entre links do site </li>
+
+        <li><strong>Espaço entre elementos</strong>: colocamos no item e não no texto ou link.</li>
+
+
+        <li><strong>Navegador interferindo</strong>: É normal que o navegador mexa nas tags do HTM e nos stylos do CSS. Poŕem, na maioria das vezes <em>atrapalha o controle do programador em relação ao site</em>.
+        <p>Para resolvermos utilizamos um arquivo que resta todas essas interferências do navegador <em>criado pela comunidade</em>. </p>
+            <ul>
+                <li>Utilizamos o arquivo reset.css</li>
+                <li>Sempre antes de importar o meu CSS.</li>
+            </ul>
+        </li>
+
+        <li><strong>Posição fixa </strong>: é a opção padrão do CSS.
+            <ul>
+                <li>É a posição natural quando cada elemento é criado.</li>
+                <li>Não pode mudar o ponto inicial</li>
+                <li>uso "position: static"</li>
+            </ul>
+        </li>
+
+        <li><strong>Posição Relativa</strong>: é uma das opções oferecidas pelo CSS.
+            <ul>
+                <li>O referêncial e a posição inicial/natural do objeto.</li>
+                <li>Podemos mudar a posição, de acordo com o referêncial.</li>
+                <li>Uso "position: relative"</li>
+            </ul>
+        </li>
+
+        <li><strong>Posição absoluta</strong>: é uma das opções oferecidas pelo CSS.
+            <ul>
+                <li>Conseguimos mudar o objeto de posição sem ele ele estar preso a uma posição inicial do proprio objeto.</li>
+                <li>O referencial será outro elemento.</li>
+                <li>Uso "position: absolute"</li>
+
+            </ul>
+        </li>
+
+        <li><strong>Espaçamento Interno x Espaço reservado</strong>: por padrão o navagador <em>soma o espaço ocupado</em> pelo objeto <em>com seu espaçamento interno</em>, "padding".
+        <p>Geralmento esse formato de calculo <em>quebra a formatação  desejada.</em></p>
+            <ul>
+                <li>É muito comum trabalhar com unidades diferentes de dimensão e espaçamento.</li>
+                <li>Usamos  <em>"box-sizing: border-box"</em>, para garantir que o espaçamento interno seja calculado dentro do espaço reservado para o objeto.
+                </li>
+
+            </ul>
+        </li>
+
+        <li><strong>Bordas</strong>: a borda tem 3 aspectos importantes
+            <p>Podemos declará-los separadamente ou juntos em uma só linha de código</p>
+
+
+            <ul>
+                <li>
+                    <h3>Juntos</h3>
+                    <p>Uso "border: <i>'tamanho' 'tipo' 'cor'</i>"</p>
+                </li>
+                <li>
+                    <h4>Tamanho</h4>
+                    <p>Podemos definir um tamanho só, ou definir o tamanho de lado da borda</p>
+                    <ul>
+                        <li>"border-width" - tamanho em todos os lados</li>
+                        <li>"border-top-width" - tamanho no topo</li>
+                        <li>"border-left-width" - tamanho na esquerda</li>
+                        <li>"border-right-width" - tamanho na direita</li>
+                        <li>"border-bottom-width" - tamanho em baixo</li>
+                    </ul>
+                    <h3>Podemos arredondar as bordas</h3>
+                    <p>Antes do CSS3 era muito trabalhoso, usava-se uma imagem com as informações desejadas e adicionava borda a essa imagem</p>
+                    <p><em>Com o CSS3</em> é possível realizar cálculos para arredondar a borda, através de angulo</p>
+                    <ul>
+                        <li>A medida que colocamos é o raio do circulo desenhado nos cantos</li>
+                        <li>"border-radius" - em todos os cantos</li>
+                        <li>"border-top-left-radius" - canto superior esquerdo </li>
+                        <li>"border-top-right-radius" - canto superior direito </li>
+                        <li>"border-bottom-left-radius" - canto inferior esquerdo </li>
+                        <li>"border-bottom-right-radius" - canto inferior esquerdo </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Tipo</h4>
+                    <p>Temos varios stylos</p>
+                    <ul>
+                        <li>"border-style: solid" - totalmente preenchido</li>
+                        <li>"border-style: dashed" - tracejado</li>
+                        <li>"border-style: dotted" - pontilhado</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Cor</h4>
+                </li>
+            </ul>
+        </li>
+
+        <li><strong>Comportamento de objetos com CSS</strong>: podemos utilizar o CSS para mapear o que o usuários está fazendo e definir um determinado comportamento para um determinado objeto.</li>
+        <p>É definido também para todos os filhos, netos, etc... desse elemento</p>
+
+        <h4>Ações possíveis para o usuario</h4>
+        <ul>
+            <li><strong>Hover</strong>: mouse em cima
+                <p>usamos "epecificação do obleto:hover{}" e depois definimos o que será feito.</p>
+                <h5>Mudar características do elemento</h5>
+                <p>Uso "especificação do elemento:hover nome característica"</p>
+            </li>
+
+            <li><strong>Active</strong>: click com mouse precionado
+            <p>usamos "especificação do objeto:active{}" e depois definimos o que será feito.</p></li>
+        </ul>
+    </ul>
+
+</body>
+</html>

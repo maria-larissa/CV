@@ -1,350 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 @font-face {
-    font-family: 'Ailerons';
-    src: url(fontes/Ailerons-Typeface.otf);
+    font-family: 'FrederickatheGreat';
+    src: url(fontes/FrederickatheGreat-Regular.ttf);
+}
+@font-face{
+    font-family: "RobotoMono";
+    src: url(fontes/RobotoMono-VariableFont_wght.ttf);
 }
 
-@font-face {
-    font-family: 'Doctor';
-    src: url(fontes/Doctor\ Glitch.otf);
-}
-
-body {
-    font-family: 'Stoked', sans-serif;
-    background-color:#a094ee;
-    color: #400D51;
-    padding-top: 4rem;
-}
-
-
-h1 {
-    font-size: 90px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align:center;
-    font-family: 'Doctor';
-    color: #F1F6F5;
-}
-
-h1:hover{
-    color: #FFE6F7;
-}
-
-#subtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-family: 'Ailerons';
-    color: #400D51;
+body{
+    font-family: 'RobotoMono';
+    font-size: 20px;
+    width: 100vw;
     margin: 0;
+    padding: 0;
 }
 
-h2{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    font-size: 40px;
-    color: #FFFEEC;
-    margin-bottom: 3rem;
-
-}
-
-h3{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 20px;
-}
-
-p {
-    color: #400D51;
-}
-
-a{
+p, a{
     color: #400D51;
     text-decoration: none;
 }
 
-a:hover{
-    color: #F1F6F5;
-}
-
-
-
-/* Beggin */
-
-.conteiner-foto{
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction:row;
-    justify-content:space-evenly;
-    margin: 8rem 0; 
-}
-
-#photo-profile{
-    height: 300px;
-    width: 300px;
-    margin-left: 20px;
-    align-items: center;
-}
-
-
-
-
-/* About me, my shills and experience */
-
-
-.conteiner-info{
-    height: auto;
-    width: 90%;
-    display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    margin:20rem 0 0 8rem ;
-}
-
-.info-text{
-    height: auto;
-    width: 90%;
-    letter-spacing: 1px;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.info-text h3{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-align: left;
-        font-size: 20px;
-}
-
-.info-text ul li{
-    margin: 10px 0;
-    text-decoration: none;
-    text-transform: none;
-    letter-spacing:3px;
-}
-
-
-
-
-/*Projects*/
-
-.projects{
-    margin-top: 15rem;
-}
-
-.projects h2{
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 2px;
-}
-
-.container{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    align-items: center;
-    margin: 3rem 0;
-}
-
-
-.card-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-}
-
-.card{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to top,purple, #a094ee,paleturquoise );
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter:grayscale(0.5);
-    color: black;
+a:hover, .contacts nav a:hover{
     cursor: pointer;
-    transition: 0.5s ease-in-out;
-    text-align: center;
+    color:#8f12c9;
 }
 
-.card-text{
-    width: 50%;
-    letter-spacing: 1px;
-    color:white;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.card-text p{
-    color: rgb(106, 31, 172);
-
-}
-
-.card-wrapper{
-    text-align:center;
+.container-column{
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+}
+
+.container-row{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* FRONT COVER */
+
+#front-cover{
+    height: auto;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+    flex-direction: column;
+}
+
+#front-cover img{
+    width: 30%;
+    margin: auto;
+}
+
+#myname{
+    height: auto;
+    margin: auto;
+    color: black;
+    display: inline-block;
+    vertical-align:middle;
+    font-family: 'FrederickatheGreat';
+    font-weight: bold;
+    font-size: clamp(1rem, 2rem + 3vw, 2rem + 6vw);
+}
+
+#subtitle{
+    font-size: clamp(1rem, 3vw, 2rem + 2vw);
+    height: auto;
+    margin: auto;
+    color: black;
+}
+
+#front-cover h4{
+    font-size: clamp(0.5rem, 1rem + 1vw, 3rem);
+    text-align: center;
+}
+
+.button-contactme{
+    width: auto;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border:0.2rem solid black;
+}
+/* MIDDLE */
+
+
+
+
+
+/* FOOTER */
+.footer{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #cccccc;
+    flex-direction: column;
+    /* background-color:transparent; */
+    /* display:inline-flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.text-footer{
+    font-size: clamp(0.5rem, 0.6rem + 1vw, 1rem);
+    color: black ;
+}
+
+
+.button-top{
+    width: 20vw;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.button-top img{
+    width: 20%;
+    height: 20%;
+}
+
+
+
+
+/* Contatos */
+
+.contacts{
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0rem;
+    flex-direction: column;
+}
+
+.contacts .header{
+    background-color: #CCCCCC;
+    padding: 1rem 0; /* para itens não enconstar nas margens do header*/
+}
+
+/* CAIXA DO MENU */
+.contacts .caixa-menu{
+    width: 95%;
+    margin: 0 auto;
     position: relative;
 }
 
-.card-wrapper::before{
-    content:'';
+.caixa-menu #title-contacs{
+    display: inline-block;
+    font-family: 'FrederickatheGreat';
+    font-size: clamp(1rem, 2rem + 1vw, 3rem + 1vw);
+}
+
+/* ITENS MENU */
+.contacts nav{
     position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    border: 2px solid paleturquoise;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
+    right: 0;
+    top: 10px;
 }
 
-.card-wrapper h2{
-    font-size:  24px;
+.contacts nav li{
+    margin: 0 0 0 2rem;
+    display: inline;
+}
+
+.contacts nav a{
+    color: black;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.card:hover{
-    filter: unset;
-}
-
-.card:hover > .card-wrapper::before{
-    height: 250px;
-    width: 250px;
-    opacity: 1;
+    font-size: clamp(0.5rem, 0.6rem + 1vw, 1rem + 1vw);
 }
 
 
 
+.list-contacts{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0 ;
+}
 
-/*footer*/
-
-#footer{
+.list-contacts li{
+    display: inline-block;
     text-align: center;
-    font-size: 14px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color:transparent;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    width: 45%;
+    margin: 1.5%;
+    background-color: #cccccc;
+    border: 0.2rem solid black;
+    border-radius: 2rem;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.list-contacts li:hover{
+    border-color: #8f12c9;
 
 }
 
-strong{
-    color: rgb(106, 31, 172);
+.list-contacts li:active{
+    border-color: #ee940e ;
 }
 
+.list-contacts p{
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
+    font-weight: bold;
+}
 
-.social-media{
-    height: auto;
+.list-contacts img{
     width: 30%;
-    margin: 0 18rem;
-    display: flex;
-    align-self: center;
-
+    height: 30%;
+    max-height: 50%;
+    max-width: 50%;
 }
-
-.social-media a{
-    display:flex;
-    margin: 2rem 3rem;
-    font-size: 20px;
-    color: #F1F6F5;
-    padding: 1rem 2rem;
-    align-items:center;
-    border-radius: 45px;
-    text-decoration:none;
-    justify-content:center;
-    border: 5px solid #400D51;
-    background-color: blueviolet;
-}
-
-
-
-
-
-
-
-
-/* PROJETO PAC3 */
-
-.video-presentation{
-    height: auto;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.video-presentation h3{
-    padding-top: 0;
-    border: 0;
-}
-
-.video-presentation video{
-    position:relative;
-    margin: 0 13rem;
-    object-fit: cover;
-    width:920px;
-    height:520px;
-    
-}
-
-.carrossel{
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1rem;
-}
-
-.conteiner-foto .text{
-    height: 100%;
-    width: 30%;
-    margin: 10px;
-    display: flex;
-    font-size: 20px;
-    text-indent: 2rem;
-    flex-direction: column;
-    text-align: justify;
-} 
-.container-foto .text p{
-    text-size-adjust: 10px;
-    margin-top: 1rem;
-}
-
-.container-foto .text a{
-    width: 100%;
-    font-size: 22px;
-}
-
-#photo-carrossel{
-    height: 360px;
-    width: 450px;
-    margin-top: 10px;
-    border-radius: 25px;
-    border: double 8px #400D51;
-}
-
-
-
