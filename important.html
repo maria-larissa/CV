@@ -33,6 +33,28 @@
 
         <li><strong>Tranformar stylo da fonte</strong>: usamos o comando 'font-weight:'</li>
 
+        <li><strong>Leitura no CSS</strong>: é feita de cima para baixo, ou seja, se tivermos mais de um item igual a ultimá sobrescreve todas as anteriores.
+            <ul>
+                <li>Caso queira mais de um item igual basata adiciona-los na mesma linha com espç=aço separando.</li>
+                <p>Ex: tranform: scale(1.2) rotate(70deg)
+                </p>
+                <p>Estamos aplicando um aumento de 20% e uma rotação em 70° no elemento.</p>
+            </ul>
+        </li>
+
+        <li><strong>Imagem</strong>: caracteristicas da tag img.
+            <p>No HTML</p>
+            <ul>
+                <li>uso <'img' src="caminho da imagem" alt="aparece caso a imagem não carregue corretamente ou não seja acessível para o usuário."></li>
+            </ul>
+
+            <p>No CSS</p>
+            <ul>
+                <li></li>
+            </ul>
+
+        </li>
+
         <li><strong>Comportamento block</strong>: são tags que <em>bloqueiam o conteúdo</em> da linha inteira como li, lo.
             <ul>
                 <li>Não permitem que alterem dimensões</li>
@@ -44,11 +66,11 @@
         </li>
 
         <li> <strong>Comportamento inline</strong> São tags que <em>não bloqueiam o conteúdo</em> tod da linha, com img.
-        <ul>
-            <li>Permitem alterar dimensões</li>
-            <li>Não permitem alterar espaçamento interno e externo</li>
-            <li>uso "display:inline"</li>
-        </ul>
+            <ul>
+                <li>Permitem alterar dimensões</li>
+                <li>Não permitem alterar espaçamento interno e externo</li>
+                <li>uso "display:inline"</li>
+            </ul>
         </li>
 
         <li> <strong>Comportamento inline-block</strong> 
@@ -85,7 +107,7 @@
 
 
         <li><strong>Navegador interferindo</strong>: É normal que o navegador mexa nas tags do HTM e nos stylos do CSS. Poŕem, na maioria das vezes <em>atrapalha o controle do programador em relação ao site</em>.
-        <p>Para resolvermos utilizamos um arquivo que resta todas essas interferências do navegador <em>criado pela comunidade</em>. </p>
+            <p>Para resolvermos utilizamos um arquivo que resta todas essas interferências do navegador <em>criado pela comunidade</em>. </p>
             <ul>
                 <li>Utilizamos o arquivo reset.css</li>
                 <li>Sempre antes de importar o meu CSS.</li>
@@ -118,7 +140,7 @@
         </li>
 
         <li><strong>Espaçamento Interno x Espaço reservado</strong>: por padrão o navagador <em>soma o espaço ocupado</em> pelo objeto <em>com seu espaçamento interno</em>, "padding".
-        <p>Geralmento esse formato de calculo <em>quebra a formatação  desejada.</em></p>
+            <p>Geralmento esse formato de calculo <em>quebra a formatação  desejada.</em></p>
             <ul>
                 <li>É muito comum trabalhar com unidades diferentes de dimensão e espaçamento.</li>
                 <li>Usamos  <em>"box-sizing: border-box"</em>, para garantir que o espaçamento interno seja calculado dentro do espaço reservado para o objeto.
@@ -129,7 +151,6 @@
 
         <li><strong>Bordas</strong>: a borda tem 3 aspectos importantes
             <p>Podemos declará-los separadamente ou juntos em uma só linha de código</p>
-
 
             <ul>
                 <li>
@@ -175,20 +196,31 @@
             </ul>
         </li>
 
-        <li><strong>Comportamento de objetos com CSS</strong>: podemos utilizar o CSS para mapear o que o usuários está fazendo e definir um determinado comportamento para um determinado objeto.</li>
-        <p>É definido também para todos os filhos, netos, etc... desse elemento</p>
+        <li><strong>Comportamento de objetos com CSS</strong>: podemos utilizar o CSS para mapear o que o usuários está fazendo e definir um determinado comportamento para um determinado objeto.
+            <p>É definido também para todos os filhos, netos, etc... desse elemento</p>
 
-        <h4>Ações possíveis para o usuario</h4>
-        <ul>
-            <li><strong>Hover</strong>: mouse em cima
-                <p>usamos "epecificação do obleto:hover{}" e depois definimos o que será feito.</p>
-                <h5>Mudar características do elemento</h5>
-                <p>Uso "especificação do elemento:hover nome característica"</p>
-            </li>
+            <h4>Ações possíveis para o usuario</h4>
+            <ul>
+                <li><strong>Hover</strong>: mouse em cima
+                    <p>usamos "epecificação do obleto:hover{}" e depois definimos o que será feito.</p>
+                    <h5>Mudar características do elemento</h5>
+                    <p>Uso "especificação do elemento:hover nome característica"</p>
+                </li>
 
-            <li><strong>Active</strong>: click com mouse precionado
-            <p>usamos "especificação do objeto:active{}" e depois definimos o que será feito.</p></li>
-        </ul>
+                <li><strong>Active</strong>: click com mouse precionado
+                <p>usamos "especificação do objeto:active{}" e depois definimos o que será feito.</p></li>
+            </ul>
+        </li>
+
+
+        <li><strong>Transição</strong>: utilizamos para suavizar mudanças estabelecidas por comportamentos.
+            <ul>
+                <li>Antes do CSS3 era feito só com o java script.</li>
+                <li>uso no CSS "transition: 'tempo de delay' e 'qual parte será realizada a transição'"</li>
+                <li>Se colocarmos "all" na parte que será realizada a transição, então aplicaremos a transição para todos. </li>
+
+            </ul>
+        </li>
 
         <li><strong>Imagem como fundo</strong>: podemos definir uma imagem para ser o fundo de um elemento.
             <ul>
@@ -197,7 +229,200 @@
             </ul>
 
         </li>
+
     </ul>
+
+    <h2>Transformções com CSS3</h2>
+    <div>
+        <p>Podemos fazer algumas transformações apenas com CSS3.</p>
+        <ul>
+            <li>uso "transform: "</li>
+            <li>uso "transform: scale('escala')" para aumentar ou diminuir um elemento usando escala. 
+                <p>Mais fácil do que definir um before com todas as características do novo tamanho.</p>
+            </li>
+            <li>uso "transform: rotate('graus'deg)" para rotacionar um elemento usando graus. 
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Formulários</h2> 
+    <div>
+        <p>Usamos formulários quando precisamos coletar informações do usuário e enviá-las para um banco de dados, um email, etc.</p>
+        
+
+        <ul>
+            <li>
+                <h5>Todos os campos de um formulário , input's label's, são <em>INLINE</em>, então não dá pra alterar espaçamentos interno e externos.</h5>
+            </li>
+
+            <li><strong>Tag's "p" e "div"</strong>: não é profissional usar tag "p" e "div", pois prejudica a semântica do formulário. 
+                <ul>
+                    <li>"div" substitui por "fieldset"</li>
+                    <li>"p" substitui por "legend"</li>
+                </ul>
+            </li>
+
+            <li><strong>Campos obrigatórios</strong>: utilizamos quando queremos que aquele campo seja obrigatoriamente preenchido pelo usuário.
+                <ul>
+                    <li>uso na tag do "input" a palavra resevada  required.</li>
+                    <li>valido para todos os tipos de input's e textarea.</li>
+                </ul>
+            </li>
+            
+            <li><strong>Sugestão de preenchimento / exemplo</strong>: usamos para mostra ao usuário o que e como deve ser preenchido aquele campo do formulário.
+                <ul>
+                    <li>uso dentro da tag input 'placeholder = ""' </li>
+                </ul>
+            </li>
+
+            <li><strong>Opção padrão</strong>: podemos definir uma opção padrão pra ser marcada adicionando dentro da tag a palavra reservada "checked"
+                <ul>
+                    <li>Funciona no input do tipo radio, checkbox.</li>
+                </ul>
+            </li>
+
+            <li> <strong>Label e input</strong>: um para interligado que anda sempre junto.
+                
+                <ul>
+                    <li><em>Label</em>: tag usada para indicar quais informações devem ser colocadas em cada input.
+                        <ul>
+                            <li>uso "for='id do input'" para estabelecer a conexão input<---->label </li>
+                        </ul>
+                    </li>
+        
+        
+                    <li><em>Input</em>: tag usada para colocar caixinha de input.
+                        <ul>
+                            <li>Geralmente é único.</li>
+                            <li>Sempre tem identificador, "id=".</li>
+                            <li>Todo formulário tem um input do tipo "submit", não precisa de label. </li>
+                            
+                            
+                            <h4>Tipos input</h4>
+
+                            <a href="http://mobileinputtypes.com/">Site com dicas de como o mobile se comporta com cada tipo de input do HTML5</a>
+                            <ol>
+                                <li>type="text" - usado para caixa de texto</li>
+
+                                <li>type="radio" - usado para mostrar opções selecionaveis.
+                                    <ul>
+                                        <li>Por padrão podem ser selecionados todos os radios de uma vez.</li>
+                                        <li>Para obrigatoriamente  <em>selecionar apenas um </em> precisamos adiconar "name=' '" em todos os radios do grupo.</li>
+                                    </ul>
+                                </li>
+
+                                <li>type="checkbox" - usado para opções selecionaveis, formato caixa.
+                                </li>
+                                
+                                <li>OUTROS</li>
+
+                                <li>type="submit" - usado para enviar as informações coletadas nos outros input.
+                                    <ul>
+                                        <li>Obrigatório em todo formulário.</li>
+                                        <li>"submit" será traduzido para a lingua que o usuário está utilizando.</li>
+                                        <li>Usamos type="submit" value="label fixa" se quisermos que o "submit" não seja traduzido.</li>
+                                    </ul>
+                                    
+                                    
+                                </li>
+
+                            </ol>
+
+                        </ul>
+                    </li>
+
+                    <li><em>Input e label</em>: para criar ambos <em>juntos</em>  basta colocar o 'input' dentro do 'label'</li>
+                </ul>
+            
+            
+            </li>
+            
+            <li><strong>caixa de mensagem</strong>: Utilizada para designar uma espaço específico para texto maior.
+                <ul>
+                    <li>uso a tag de conteúdo<'textarea'> </li>
+                    <li>Pode ser acompanhada la tag 'label'.</li>
+                    <li>cols="" - defini quanta colunas terá a caixa de texto, equivalente a quantas letras cabe em cada linha.</li>
+                    <li>rows="" - defini quantas linhas terá a caixa de texto.</li>
+                    <li>Para <em>definir o tamanho</em> da caixa de <em>forma mais profissional</em> usamos o CSS e não 'cols' e 'rols'.</li>
+                </ul>
+            </li>
+
+            <li><strong>Lista opções embutida</strong>: oferece varias opções pro usuário escolher, em formato de lista embutida.
+                <ul>
+                    <li>uso a tag de conteúdo <'select'></li>
+                    <li>uso a tag de conteúdo <'option'> dentro do "select" para inserir cada opção.</li>
+                </ul>
+            </li>
+    
+    </div>
+    
+    <h2><strong>hierarquia no CSS</strong></h2>
+    <p>Os marcadores dentro do CSS seguem essa ordem de "força/prioridade".</p> 
+    <ol>
+        <li><em>CSS in line</em></li>
+        <li><em>id</em> - stronger</li>
+        <li><em>class</em> - intermediate</li>
+        <li><em>tag</em> - weaker</li>
+        <p>Ou seja:</p>
+        <ul>
+            <li>Nenhum style sobrepõe o style do css in line.</li>
+            <li>Caso esteja utilizando CSS externo, nada sobrepõe ao style do id.</li>
+            <li>É <em>recomendável utilizar classes nos elementos</em> pois, não é tão genérico a ponto de sempre ter que mudar, quando muda a tag, e nem é tão específico a ponto de funcionar somente em um elemento.</li>
+        </ul>
+    </ol>   
+    
+    <h2>Tabelas</h2>
+    <div>
+        É um conjunto de linha e colunas.
+        <ul>
+            <p> No HTML</p>
+            <li><strong>Linhas</strong>: uso a tag de conteúdo "<'tr'>".</li>
+            <li><strong>Colunas/células</strong>: uso a tag de conteúdo "<'td'>".</li>
+            
+            <li><strong>Cabeçalho</strong>: uso a tag de conteúdo <'thead'>.</li>
+
+            <li><strong>Título do cabeçalho</strong>: uso a tag de conteúdo <'th'></li>
+
+            <li><strong>Corpo da tabela</strong>: uso a tag de conteúdo <'tbody'></li>
+            
+            <li>Para um código mais profissional invista na semântica da tabela, para torná-la mais intuitiva e estilizada.</li>
+
+            <p>Exemplo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>8h às 18h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>8h às 18h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>8h às 18h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>No CSS</p>
+            <ul>
+                <li></li>
+            </ul>
+            
+        </ul>
+    </div>
+             
 
 </body>
 </html>

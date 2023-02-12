@@ -1,0 +1,79 @@
+/* HEADER */
+
+header{
+    min-height: 7vh;
+    width: 100vw;
+    background-color: #CCCCCC;
+    vertical-align: top;
+    padding: 1rem 0; /* para itens não enconstar nas margens do header*/
+}
+
+.caixa-menu{
+    min-height: 7vh;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/* ITENS MENU */
+nav{
+    width: 40%;
+    padding: 2%;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+nav li{
+    margin: 0 0 0 1%;
+    display: inline;
+    align-items: center;
+
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: clamp(0.3rem, 0.6rem + 1vw, 1rem + 1vw);
+}
+
+nav a:hover{
+    cursor: pointer;
+    color:#8f12c9;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background: #cccccc;
+    width: 100vw;
+    padding: 2rem 0;
+    /* background-color:transparent; */
+}
+
+.text-footer, .copyrigth{
+    font-size: clamp(0.3rem, 0.5rem + 1vw, 1rem);
+    color: black ;
+}
+
+.button-top{
+    width: 20vw;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.button-top img{
+    width: 20%;
+    height: 20%;
+}

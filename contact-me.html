@@ -5,66 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-contacts.css">
+    <link rel="stylesheet" href="style-header&footer.css">
     <title>Contacts | Maria Larissa</title>
 </head>
 <body>
-    <div class="contacts">
 
-        <header>
-            <div class="caixa-menu">
-                <div id="title-contacs"><h1>My contacts</h1></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li> 
-                        <li><a href="#">Projects</a></li> 
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <div class="caixa-menu">
+            <div id="title-contacs"><h1>My contacts</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="#">Projects</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <ul class="list-contacts">
+    <main>
+        <ul class="list-contacts">
 
-                <li>
-                    <figure class="button-social-media">
-                        <a href="https://www.instagram.com/regional_bomdemais/?next=%2F">
-                            <img src="imagens/logos/instagram.png">
-                        </a>
-                        <figcaption> Instagram </figcaption>
-                    </figure>
-                </li>
+            <li>
+                <figure class="button-social-media">
+                    <a href="https://www.instagram.com/regional_bomdemais/?next=%2F">
+                        <img src="imagens/logos/instagram.png">
+                    </a>
+                    <figcaption> Instagram </figcaption>
+                </figure>
+            </li>
+            
+            <li>
+                <figure class="button-social-media">
+                    <a href="https://br.linkedin.com/in/maria-larissa-andrade/en?trk=people-guest_people_search-card">                 <img src="imagens/logos/linkedin.png">         
+                    </a>
+                    <figcaption>Linkedin  </figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure class="button-social-media">
+                    <a href="https://github.com/maria-larissa"> 
+                        <img src="imagens/logos/github.png">
+                    </a>
+                    <figcaption>Github</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure  class="button-social-media">
+                    <a href="mailto:marialarissayuri@gmail.com">
+                        <img src="imagens/logos/gmail.png">
+                    </a>
+                    <figcaption>Gmail</figcaption>
+                </figure>
+            </li>
+
+        </ul>
+
+        <!-- FORMULÀRIO -->
+        <form>
+
+            <label for="input-name">name</label>
+            <input id="input-name" type="text" required placeholder="Ex.: Maria Larissa">
+
+            <label for="input-email">email</label>
+            <input id="input-email" type="email" required placeholder="seuemail@dominio.com">
+
+
+            <label for="input-cell">number</label>
+            <input id="input-cell" type="tel">
+
+            <label for="input-message">message</label>
+            <textarea id="input-message" rows="10" required placeholder="Type your message  here."></textarea>
+
+
+            <fieldset class="options-contact">
+                <legend>Como prefere o nosso contato?</legend>
+                <label><input type="radio" name="tipo-contato">email</label>
                 
-                <li>
-                    <figure class="button-social-media">
-                        <a href="https://br.linkedin.com/in/maria-larissa-andrade/en?trk=people-guest_people_search-card">                 <img src="imagens/logos/linkedin.png">         
-                        </a>
-                        <figcaption>Linkedin  </figcaption>
-                    </figure>
-                </li>
 
-                <li>
-                    <figure class="button-social-media">
-                        <a href="https://github.com/maria-larissa"> 
-                            <img src="imagens/logos/github.png">
-                        </a>
-                        <figcaption>Github</figcaption>
-                    </figure>
-                </li>
+                <label><input type="radio" name="tipo-contato">telefone
+                </label>
+                
+                <label><input type="radio" name="tipo-contato" checked >whatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere para ser atendido?</legend>
+                <select>
+                    <option>manhã</option>
+                    <option>tarde</option>
+                    <option>noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas atualizações por email?</label>
+
+            <input id="butoon-send" type="submit" value="Send">
+            
+        </form>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>8h às 18h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>8h às 18h</td>
+                </tr>
+                
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>8h às 18h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
     
-                <li>
-                    <figure  class="button-social-media">
-                        <a href="mailto:marialarissayuri@gmail.com">
-                            <img src="imagens/logos/gmail.png">
-                        </a>
-                        <figcaption>Gmail</figcaption>
-                    </figure>
-                </li>
-
-            </ul>
-        </main>
-        
-    </div>
 
     <footer>
         <p class="text-footer">Thank's for visite me!</p>
