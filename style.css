@@ -7,12 +7,17 @@
     src: url(fontes/RobotoMono-VariableFont_wght.ttf);
 }
 
+
 body{
     font-family: 'RobotoMono';
     font-size: 20px;
     width: 100vw;
     margin: 0;
     padding: 0;
+}
+
+strong{
+    font-weight: bold;
 }
 
 p, a{
@@ -24,6 +29,10 @@ p, a{
 a:hover{
     cursor: pointer;
     color:#8f12c9;
+}
+
+a:visited{
+    color: chocolate;
 }
 
 .container-column{
@@ -41,47 +50,71 @@ a:hover{
 
 
 /* FRONT COVER */
+/* CSS da parte inicial do protifólio */
 
-#front-cover{
-    height: auto;
+.front-cover{
     width: 90vw;
     margin: 0 auto;
     text-align: center;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     flex-direction: column;
     position: relative;
 }
 
-#front-cover img{
+.container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.front-cover img{
     width: 30%;
     margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.text-main{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 #myname{
-    height: auto;
-    margin: auto;
     color: black;
+    font-weight: bold;
+    margin: auto auto 0 ;
     display: inline-block;
     vertical-align:middle;
     font-family: 'FrederickatheGreat';
-    font-weight: bold;
     font-size: clamp(1rem, 2rem + 3vw, 2rem + 6vw);
 }
 
 #subtitle{
-    font-size: clamp(1rem, 3vw, 2rem + 2vw);
-    height: auto;
-    margin: auto;
     color: black;
+    margin: 0 auto auto;
+    font-size: clamp(1rem, 3vw, 2rem + 2vw);
 }
 
-#front-cover h4{
+.front-cover h4{
     font-size: clamp(0.5rem, 1rem + 1vw, 3rem);
     text-align: center;
+    margin: 2%;
 }
 
 
 
 
 
-/* MIDDLE */
+
+
+/* Main */
+main{
+    width: 95vw;
+    margin: 5% auto;
+}
+
+section{
+    width: 100%;
+    padding: 1%;
+}
