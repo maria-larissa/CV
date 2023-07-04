@@ -7,114 +7,245 @@
     src: url(fontes/RobotoMono-VariableFont_wght.ttf);
 }
 
-
-body{
-    font-family: 'RobotoMono';
-    font-size: 20px;
-    width: 100vw;
-    margin: 0;
+*{
     padding: 0;
-}
-
-strong{
-    font-weight: bold;
-}
-
-p, a{
-    color: #400D51;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-a:hover{
-    cursor: pointer;
-    color:#8f12c9;
-}
-
-a:visited{
-    color: chocolate;
-}
-
-.container-column{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-row{
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-/* FRONT COVER */
-/* CSS da parte inicial do protifólio */
-
-.front-cover{
-    width: 90vw;
-    margin: 0 auto;
-    text-align: center;
-    /* padding-top: 4rem; */
-    flex-direction: column;
-    position: relative;
-}
-
-.container-main{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.front-cover img{
-    width: 30%;
-    margin: auto;
-    display: inline-block;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.text-main{
-    width: 60%;
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #20262E ;
+    color: #E9E8E8;
+    display: flex;
+    align-items: flex-start   ;
+}
+
+
+header{
+    width: 100%;
+    position: absolute;
+}
+
+.menu{
+    width: 100%;
+    height: 40vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #CD5888;
+    border-radius: 0px 0px 200px 200px;
+    position: absolute;
+    animation: fadeInDown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+.menu li{
+    margin: 0.5rem;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #E9E8E8;
+    cursor: pointer;
+}
+
+
+#icn-close{
+    display: none;
+}
+
+#icn-close, #icn-menu{
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    top: 1rem;
+    left: 1rem;
+}
+
+main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    
+    width: 80%;
+    margin: auto;
 }
 
-#myname{
-    color: black;
-    font-weight: bold;
-    margin: auto auto 0 ;
-    display: inline-block;
-    vertical-align:middle;
-    font-family: 'FrederickatheGreat';
-    font-size: clamp(1rem, 2rem + 3vw, 2rem + 6vw);
+.introduction{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+
 }
 
-#subtitle{
-    color: black;
-    margin: 0 auto auto;
-    font-size: clamp(1rem, 3vw, 2rem + 2vw);
+
+
+.texto-introducao strong{
+    color:#DD58D6;
+    /* color:#d818ce; */
 }
 
-.front-cover h4{
-    font-size: clamp(0.5rem, 1rem + 1vw, 3rem);
+.titulo{
+    font-size: 20px;
+    line-height: 30px;
+    margin:2rem 0.3rem;
     text-align: center;
-    margin: 2%;
+}
+
+.texto-introducao p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    text-align:justify;
+    line-height: 16px;
+    /* opacity: 0.6; */
 }
 
 
-
-
-
-
-
-/* Main */
-main{
-    width: 95vw;
-    margin: 5% auto;
+#foto-oficial{
+    margin: 0 auto;
 }
 
-section{
-    width: 100%;
-    padding: 1%;
+.btns{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.btn-contato{
+    background-color: transparent;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 8px;
+    border: 1px solid #DD58D6;
+    font-size: 14px;
+    transition: all 1s;
+}
+
+.btn-contato a{
+    color: #E9E8E8;
+    text-decoration: none;
+}
+
+.btn-contato img{
+    max-width: 60%;
+}
+
+.name-btn-contact{
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    #icn-close, #icn-menu{
+        display: none;
+    }
+
+    body{
+        display: block;
+        align-items: center;
+    }
+
+    header{
+        position: static;
+    }
+
+    .menu{
+        display: flex;
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        border-radius: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        text-transform: capitalize;
+        font-size: 18px;    
+        animation: none;
+        position: static;
+    }
+
+    .menu li{
+        padding: 0.5rem;
+        border: 1px solid #DD58D6;
+        border-radius: 8px;
+        animation: none;
+    }
+
+    .texto-introducao{
+        max-width: 80%;
+    }
+    
+
+
+    .titulo{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .texto-introducao p{
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .btns{
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .btn-contato{
+        width: calc((100% / 4) - 1rem );
+        text-decoration: none;
+        color: #DD58D6;
+        text-transform: capitalize;
+        
+    }
+
+    
+    .name-btn-contact{
+        font-size: 12px;
+        text-align: center;
+        padding: 0.5rem;
+        display: block;
+    }
+}
+
+@media (min-width:1200px) {
+    .texto-introducao{
+        max-width: 60%;
+    }
+
+    .menu{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .titulo{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .texto-introducao p{
+        width: 80%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    
+    .name-btn-contact{
+        font-size: 15px;
+    }
 }

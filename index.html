@@ -1,57 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front End developer MARIA LARISSA</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-header&footer.css">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maria Larissa's Portifolio</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-
-</head>
-<body>
-    <header>
-        <div class="caixa-menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Projects</a></li> 
-                    <li><a href="contact-me.html">Contacts</a></li> 
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <section class="front-cover">  
-
-        <div  class="container-main">
-            <img src="imagens/ML.png" alt="Foto da desenvolvedora front end Maria Larissa.">
-
-            <div class="text-main">
-                <h1 id="myname"> Maria Larissa</h1>
-                <h3 id="subtitle">Front-End developer</h3>
+    </head>
+    <body>
+        <header>
+            <div id="icn-menu" aria-labelledby="Icone open menu">
+                <span class="material-icons">
+                    menu
+                </span>
+            </div>
+            
+            <div id="icn-close" aria-labelledby="Icone close menu">
+                <span class="material-icons">
+                    close
+                </span>
             </div>
 
-        </div>
+            <nav class="menu">
+                <li><a href="#">About me</a></li>
+                <!-- <li><a href="#">Contacts</a></li> -->
+                <li><a href="#">Projects</a></li>
+            </nav>
+        </header>
 
-
-        <h4>Hi, welcome! I'm a front end developer how has a <em>great knowledge</em>  in <strong>Resposive Web Desing</strong>.</h4>
-    </section>
-
-
+        <main>
+            <div class="introduction">
+                <div class="texto-introducao">
+                    <h1 class="titulo">Hello! I'm Larissa, <strong>Front-end Developer</strong></h1>
+        
+                    <p>
+                        A Front-end focused on Web Developer, <strong>building (and occasionally designing) exceptional Front-end of websites and web applications.</strong> And I love what I do.
+                        <br>
+                        If you need a Front-end developer for make your ideia a real life product, don't hesitate, contact-me!
+                    </p>
+                    
+                </div>
     
-    <main class="container-column">
-        <section>
-            informações e projetos
-        </section>
-    </main>
+    
+                <picture id="foto-oficial">
+                    <source media="(min-width:768px)" srcset="imagens/fotoOficial/Group2@2x.png">
+                    <source media="(min-width:1200px)" srcset="imagens/fotoOficial/Group2@3x.png">
+                    <img src="imagens/fotoOficial/Group2.png" alt="Larissa's photo">
+                </picture>
+            </div>
 
+            <div class="btns">
+                <a class="btn-contato" target="_blank" href="https://www.instagram.com/webdev.larissa/" alt="Instagram contact button" aria-labelledby="Instagram's contact button">
 
-    <footer>
-        <p class="text-footer">Thank's for visite me!</p>
-        <p class="copyrigth"> &copy;  Maria Larissa - 2022</p>
-    </footer>
-</body>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="imagens/icons/logos/instagram60x60.png">
+                        <source media="(min-width: 768px)" srcset="imagens/icons/logos/instagram50x50.png">
+                        
+                        <img src="imagens/icons/logos/instagram40x40.png" alt="Instagram's logo" aria-labelledby="Instagram's logo">
+                    </picture>
+                    <p class="name-btn-contact">Instagram</p>
+                </a>
+
+                <a class="btn-contato" target="_blank" href="mailto:marialarissayuri@gmail.com" alt="Email contact button" aria-labelledby="Email's contact button">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="imagens/icons/logos/email60x60.png">
+                        <source media="(min-width: 768px)" srcset="imagens/icons/logos/email50x50.png">
+                        
+                        <img src="imagens/icons/logos/email40x40.png" alt="Email's logo"  aria-labelledby="Email's logo">
+                    </picture>
+                    <p class="name-btn-contact"> email</p>
+                </a>
+            
+                <a class="btn-contato"  target="_blank" href="https://www.linkedin.com/in/maria-larissa-andrade/" alt="Linkedin contact button" aria-labelledby="Linkedin's contact button">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="imagens/icons/logos/linkedin60x60.png">
+                        <source media="(min-width: 768px)" srcset="imagens/icons/logos/linkedin50x50.png">
+    
+                        <img src="imagens/icons/logos/linkedin40x40.png" alt="Linkedin's logo" aria-labelledby="Linkedin's logo" >
+                        
+                    </picture>
+                    <p class="name-btn-contact">linkedin</p>
+                </a>
+            
+                <a class="btn-contato" target="_blank" href="https://github.com/maria-larissa" alt="Github contact button" aria-labelledby="Github's contact button">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="imagens/icons/logos/github60x60.png">
+                        
+                        <source media="(min-width: 768px)" srcset="imagens/icons/logos/github50x50.png">
+    
+                        <img src="imagens/icons/logos/github40x40.png" alt="Github's logo" aria-labelledby="Github's logo">
+                        
+                    </picture>
+                    <p class="name-btn-contact">github</p>
+                </a>
+          
+              
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>
