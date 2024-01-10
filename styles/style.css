@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'FrederickatheGreat';
+    src: url(assets/fonts/FrederickatheGreat-Regular.ttf);
+}
+@font-face{
+    font-family: "RobotoMono";
+    src: url(assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: #20262E ;
+    color: #E9E8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+header{
+    width: 100%;
+    position: relative;
+}
+
+.menu{
+    width: 100%;
+    height: 30vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #CD5888;
+    border-radius: 0px 0px 200px 200px;
+    position: absolute;
+    animation: fadeInDown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    font-size: 12px;
+}
+
+.menu li{
+    margin: 0.5rem;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #E9E8E8;
+    cursor: pointer;
+}
+
+
+#icn-close{
+    display: none;
+}
+
+#icn-close, #icn-menu{
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    top: 1rem;
+    left: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    width: 80%;
+    margin: auto;
+}
+
+.introduction{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+
+
+.texto-introducao strong{
+    color:#DD58D6;
+}
+
+.titulo{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 3rem 0.3rem 2rem 0.3rem;
+    text-align: center;
+}
+
+.texto-introducao p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    text-align:justify;
+    line-height: 16px;
+    /* opacity: 0.6; */
+}
+
+
+#foto-oficial{
+    margin: 0 auto;
+}
+
+.btns{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem 0;
+}
+
+
+.btn-contato{
+    background-color: transparent;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 8px;
+    border: 1px solid #DD58D6;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.btn-contato:hover{
+    background-color: #CD5888;
+}
+
+.btn-contato a{
+    color: #E9E8E8;
+    text-decoration: none;
+}
+
+.btn-contato img{
+    max-width: 60%;
+}
+
+/* .name-btn-contact{
+    display: none;
+} */
+
+
+
+
+/* About ME */
+
+.presentation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: #CD5888;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 10px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    #icn-close, #icn-menu{
+        display: none;
+    }
+
+    body{
+        display: block;
+        align-items: center;
+    }
+
+    header{
+        position: static;
+    }
+
+    .menu{
+        display: flex;
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        border-radius: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        text-transform: capitalize;
+        font-size: 18px;    
+        animation: none;
+        position: static;
+    }
+
+    .menu li{
+        padding: 0.5rem;
+        border: 1px solid #DD58D6;
+        border-radius: 8px;
+        /* animation: none; */
+        transition: all 0.2s;
+    }
+
+    .menu li:hover{
+        cursor: pointer;
+        background-color: #CD5888;
+    }
+
+    .texto-introducao{
+        max-width: 80%;
+    }
+    
+
+
+    .titulo{
+        font-size: 40px;
+        line-height: 50px;
+        margin:2rem 0.3rem;
+    }
+
+    .texto-introducao p{
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .btns{
+        width: 70%;
+        margin: 5rem auto;
+    }
+
+    .btn-contato{
+        width: calc((100% / 4) - 1rem );
+        text-decoration: none;
+        color: #DD58D6;
+        text-transform: capitalize;
+        
+    }
+
+    
+    .name-btn-contact{
+        font-size: 12px;
+        text-align: center;
+        padding: 0.5rem;
+        display: block;
+    }
+
+/* About ME */
+    .text-presentation{
+        width: 60%;
+    }
+
+
+    /* FOOTER */
+    footer{
+        font-size: 12px;
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width:1200px) {
+    .texto-introducao{
+        max-width: 60%;
+    }
+
+    .menu{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .titulo{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .texto-introducao p{
+        width: 80%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    
+    .name-btn-contact{
+        font-size: 15px;
+    }
+
+
+
+    
+/* About ME */
+
+    /* FOOTER */
+    footer{
+        font-size: 14px;
+    }
+
+}
