@@ -7,6 +7,13 @@
     src: url(assets/fonts/RobotoMono-VariableFont_wght.ttf);
 }
 
+/* CSS variables */
+:root{
+    --primary-color: #20262E;
+    --secundary-color: #E9E8E8;
+    --tertiary-color: #DD58D6;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,8 +22,8 @@
 
 body{
     width: 100vw;
-    background-color: #20262E ;
-    color: #E9E8E8;
+    background-color: var(--primary-color) ;
+    color: var(--secundary-color);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,7 +45,7 @@ header{
     list-style: none;
     flex-wrap: wrap;
     padding: 2rem;
-    background-color: #CD5888;
+    background-color: var(--tertiary-color);
     border-radius: 0px 0px 200px 200px;
     position: absolute;
     animation: fadeInDown;
@@ -55,7 +62,7 @@ header{
 
 .menu a{
     text-decoration: none;
-    color: #E9E8E8;
+    color: var(--secundary-color);
     cursor: pointer;
 }
 
@@ -91,7 +98,7 @@ main{
 
 
 .texto-introducao strong{
-    color:#DD58D6;
+    color:var(--tertiary-color);
 }
 
 .titulo{
@@ -108,7 +115,6 @@ main{
     font-size: 12px;
     text-align:justify;
     line-height: 16px;
-    /* opacity: 0.6; */
 }
 
 
@@ -131,17 +137,17 @@ main{
     text-align: center;
     padding: 0.2rem;
     border-radius: 8px;
-    border: 1px solid #DD58D6;
+    border: 1px solid var(--tertiary-color);
     font-size: 14px;
     transition: all 0.2s;
 }
 
 .btn-contato:hover{
-    background-color: #CD5888;
+    background-color: var(--tertiary-color);
 }
 
 .btn-contato a{
-    color: #E9E8E8;
+    color: var(--secundary-color);
     text-decoration: none;
 }
 
@@ -149,9 +155,6 @@ main{
     max-width: 60%;
 }
 
-/* .name-btn-contact{
-    display: none;
-} */
 
 
 
@@ -171,7 +174,7 @@ main{
 /* FOOTER */
 footer{
     width: 100%;
-    background-color: #CD5888;
+    background-color: var(--tertiary-color);
     text-align: center;
     padding: 0.5rem 0;
     font-size: 10px;
@@ -211,15 +214,14 @@ footer{
 
     .menu li{
         padding: 0.5rem;
-        border: 1px solid #DD58D6;
+        border: 1px solid var(--tertiary-color);
         border-radius: 8px;
-        /* animation: none; */
         transition: all 0.2s;
     }
 
     .menu li:hover{
         cursor: pointer;
-        background-color: #CD5888;
+        background-color: var(--tertiary-color);
     }
 
     .texto-introducao{
@@ -247,7 +249,7 @@ footer{
     .btn-contato{
         width: calc((100% / 4) - 1rem );
         text-decoration: none;
-        color: #DD58D6;
+        color: var(--tertiary-color);
         text-transform: capitalize;
         
     }
