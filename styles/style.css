@@ -127,6 +127,7 @@ main{
     font-size: 0.75rem;
     text-align:justify;
     line-height: 1rem;
+    text-indent: 1.5rem;
 }
 
 
@@ -207,6 +208,10 @@ footer{
     color: var(--secundary-color);
     background-color: var(--shadow);
     box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
+}
+
+.aboutme-important-details{
+    font-weight: 510;
 }
 
 
