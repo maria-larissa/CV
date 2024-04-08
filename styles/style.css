@@ -121,7 +121,8 @@ main{
     color:var(--tertiary-color);
 }
 
-.text-container p{
+/* .text-container p{ */
+p{
     margin: 0 auto;
     margin-bottom: 1rem;
     font-size: 0.75rem;
@@ -190,7 +191,6 @@ footer{
     text-shadow: 0.1rem 0.1rem 0.2rem var(--tertiary-color);
 }
 
-
 .btn-lets-talk{
     display: inline-block;
     background-color: var(--primary-color);
@@ -212,6 +212,13 @@ footer{
 
 .aboutme-important-details{
     font-weight: 510;
+}
+
+
+/* Page projects */
+.projects{
+    width: auto;
+    text-align: justify;
 }
 
 
