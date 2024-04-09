@@ -2,10 +2,6 @@
     font-family: 'FrederickatheGreat';
     src: url(assets/fonts/FrederickatheGreat-Regular.ttf);
 }
-@font-face{
-    font-family: "RobotoMono";
-    src: url(assets/fonts/RobotoMono-VariableFont_wght.ttf);
-}
 
 /* CSS variables */
 :root{
@@ -14,351 +10,52 @@
     --tertiary-color: #DD58D6;
     --shadow: #913175;
     --font: FrederickatheGreat;
+    --white: white;
+    --gray: #7380B9;
+    --gray2: #EEEEEE;
+    
 }
 
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
 
 body{
-    width: 100vw;
-    background-color: var(--primary-color) ;
-    color: var(--secundary-color);
-    display: flex;
-    font-family: var(--font);
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-header{
-    width: 100%;
-    position: relative;
-}
-
-
-#icn-close{
-    display: none;
-}
-
-#icn-close, #icn-menu{
-    cursor: pointer;
-    position: absolute;
-    z-index: 5;
-    top: 1rem;
-    left: 1rem;
-}
-
-.menu{
-    width: 100%;
-    height: 30vh;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 2rem;
-    background-color: var(--tertiary-color);
-    border-radius: 0rem 0rem 12.5rem 12.5rem;
-    position: absolute;
-    animation: fadeInDown;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    font-size: 0.75rem;
-}
-
-.menu li{
-    margin: 0.5rem;
-    animation: fadeIn;
-    animation-duration: 0.5s;
-}
-
-.menu a{
-    text-decoration: none;
-    color: var(--secundary-color);
-    cursor: pointer;
-}
-
-
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-}
-
-.text-photo-container{
-    display: flex;
-    flex-wrap:wrap-reverse;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.titulo{
-    font-size: 1.25rem;
-    font-weight: 510;
-    line-height: 1.875rem;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-
-.text-container, .text-presentation{
-    width: auto;
-    text-align: center;
-}
-
-.text-container strong{
-    color:var(--tertiary-color);
-}
-
-/* .text-container p{ */
-p{
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
-    text-align:justify;
-    line-height: 1rem;
-    text-indent: 1.5rem;
-}
-
-
-#foto-oficial{
-    margin: 3rem auto auto auto;
-}
-
-.btns{
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
-    gap: 2rem 0;
-}
-
-
-.btn-contato{
-    background-color: transparent;
-    text-align: center;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-    border: 0.0625rem solid var(--tertiary-color);
-    font-size: 0.875rem;
-    transition: all 0.2s;
-}
-
-.btn-contato:hover{
-    background-color: var(--tertiary-color);
-}
-
-.btn-contato a{
-    color: var(--secundary-color);
-    text-decoration: none;
-}
-
-.btn-contato img{
-    max-width: 60%;
-}
-
-
-
-/* FOOTER */
-footer{
-    width: 100%;
-    background-color: var(--tertiary-color);
-    text-align: center;
-    padding: 0.5rem 0;
-    font-size: 0.625rem;
-}
-
-
-
-/* Page About Me */
-#aboutme-final-frase{
-    text-align: center;
-    margin: 1rem auto;
-    font-size: 1rem;
-    font-weight: 510;
-    text-shadow: 0.1rem 0.1rem 0.2rem var(--tertiary-color);
-}
-
-.btn-lets-talk{
-    display: inline-block;
     background-color: var(--primary-color);
-    color: var(--secundary-color);
-    text-decoration: none;
-    font-size: 0.75rem;
-    border: 0.0625rem solid var(--tertiary-color);
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.btn-lets-talk:hover{
-    cursor:pointer;
-    color: var(--secundary-color);
-    background-color: var(--shadow);
-    box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
-}
-
-.aboutme-important-details{
-    font-weight: 510;
+    font-family: var(--font);
+    color: var(--secundary-color)
 }
 
 
-/* Page projects */
-.projects{
-    width: auto;
+.background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.section1{
+    background-image: url(/assets/images/background.jpg);
+}
+
+.card-body, .offcanvas-body{
     text-align: justify;
 }
-
-
-@media (min-width: 768px) {
-    body{
-        display: block;
-        align-items: center;
-    }
-
-    header{
-        position: static;
-    }
-
-    /* MENU */
-    #icn-close, #icn-menu{
-        display: none;
-    }
-    
-    .menu{
-        display: flex;
-        background-color: transparent;
-        flex-direction: row;
-        height: auto;
-        border-radius: 0;
-        align-items: center;
-        justify-content: space-evenly;
-        text-transform: capitalize;
-        font-size: 1.125rem;    
-        animation: none;
-        position: static;
-    }
-
-    .menu li{
-        padding: 0.5rem;
-        border: 0.0625rem solid var(--tertiary-color);
-        border-radius: 0.5rem;
-        transition: all 0.2s;
-    }
-
-    .menu li:hover{
-        cursor: pointer;
-        background-color: var(--shadow);
-        box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
-    }
-
-
-    /* INTRODUCTION */
-    .text-photo-container{
-        gap: 3rem;
-    }
-
-    .titulo{
-        font-size: 2.5rem;
-        line-height: 3.125rem;
-        margin:2rem 0.3rem;
-    }
-
-    .text-container{
-        max-width: 80%;
-    }
-
-    .text-container p{
-        font-size: 0.94rem;
-        line-height: 1.25rem;
-    }
-
-    #foto-oficial{
-        margin-top: auto;
-    }
-
-
-    /* CONTACT BUTTONS */
-    .btns{
-        width: 70%;
-        margin: 5rem auto;
-    }
-
-    .btn-contato{
-        width: calc((100% / 4) - 1rem );
-        text-decoration: none;
-        color: var(--tertiary-color);
-        text-transform: capitalize;
-        
-    }
-
-
-
-    /* ABOUT ME */
-    .text-presentation{
-        width: 60%;
-    }
-
-    #aboutme-final-frase{
-        font-size: 1.5rem;
-        margin: 1.5rem auto;
-    }
-
-    .btn-lets-talk{
-        font-size: 1.125rem;
-        margin-bottom: 2rem;
-    }
-
-
-    /* FOOTER */
-    footer{
-        font-size: 0.75rem;
-        padding: 1rem 0;
-    }
+.main-btn{
+    background-color: var(--gray) ;
+    color: var(--white);
 }
 
-@media (min-width:1200px) {
-    .menu{
-        width: 80%;
-        margin: 0rem auto;
-    }
-
-    /* INTRODUCTION */
-    .text-photo-container{
-        gap: 4rem;
-    }
-    
-    .titulo{
-        font-size: 3.75rem;
-        line-height: 4.375rem;
-    }
-    
-    .text-container{
-        max-width: 60%;
-    }
-
-    .text-container p{
-        width: 80%;
-        font-size: 1.125rem;
-        line-height: 1.375rem;
-    }
-
-
-    /* FOOTER */
-    footer{
-        font-size: 0.875rem;
-    }
-
+#canvas-1{
+    background-color: var(--gray2);
 }
+
+.project-card{
+    color: var(--white);
+}
+
+/* .card-img:hover .card-title{
+    display: block;
+} */
