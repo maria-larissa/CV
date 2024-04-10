@@ -24,25 +24,30 @@
 body{
     background-color: var(--primary-color);
     font-family: var(--font);
-    color: var(--secundary-color)
+    color: var(--white);
 }
 
 
 .background{
+    width: 100%;
+    min-height: 100vh;
+    /* height: auto; */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 100vh;
-    width: 100%;
+    background-attachment: fixed;
+
+
 }
 
-.section1{
+#home{
     background-image: url(/assets/images/background.jpg);
 }
 
-.card-body, .offcanvas-body{
+.text-justify{
     text-align: justify;
 }
+
 .main-btn{
     background-color: var(--gray) ;
     color: var(--white);
@@ -59,3 +64,12 @@ body{
 /* .card-img:hover .card-title{
     display: block;
 } */
+
+#projects{
+    background-image: url(/assets/images/background2.jpg);
+}
+
+.form-floating{
+    background-color: transparent;
+    color: #20262E;
+}
