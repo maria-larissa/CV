@@ -16,16 +16,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     
 </head>
 <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark"> -->
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
                 <h1>
-                    <a class="navbar-brand" href="./index.html">Dev Larissa</a>
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="assets/images/logos/fundo escuro/Logo-60px(header).png" alt="">
+                    </a>
                 </h1>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +38,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#about-me">About Me</a>
@@ -83,59 +86,68 @@
             
             <h2 class="fs-2 text-center my-5">About me</h2>
 
-            <div class="row gap-4">
+            <div class="row gap-4 justify-content-center align-items-center mb-5 d-flex flex-wrap-reverse">
                 
-                <div>
-                    <h4 class="text-center my-3">My skills</h4>
+                <div class="col-10 col-md-5 justify-content-center my-3">
+                    <!-- <h4 class="text-center my-3">My skills</h4> -->
                     
-                    <div class="container col-10 col-md-6 border border-1 rounded-2">
-
-                        <div class="row">
+                    <div>
+                        <div class="row justify-content-center">
                         
-                            <div class="col-3 p-2">
+                            <div class="col-3 p-3 background1">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                             </div>
 
-                            <div class="col-3 p-2">
+                            <div class="col-3 p-3 background2">
                                 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-          
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            
                             </div>
 
-                            <div class="col-3 p-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <div class="col-3 p-3 background1">
+                                
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+            
                             </div>
-
-                            <div class="col-3 p-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                            </div>
-
-                            <div class="col-3 p-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                            </div>
-
-                            <div class="col-3 p-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                            </div>
-
                         </div>
-              
+
+                        <div class="row justify-content-center">
+                            <div class="col-3 p-3 background2">
+                                
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+            
+                            </div>
+
+                            <div class="col-3 p-3 background1">
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            
+            
+                            </div>
+
+                            <div class="col-3 p-3 background2">
+                                
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            
+                            </div>
+                        </div>
                     </div>
                 </div>
     
 
-                <div>
-                    <h4 class="text-center my-3">Who I am?</h4>
-    
-                    <div class="card text-bg-dark border-secondary container col-10 col-md-6 ">
-                        
+                <div class="col-10 col-md-5">
+                       
+                    <div class="card text-bg-dark border-secondary container">
+
     
                         <div class="card-body">
+                        
+                            <h4 class="text-center my-2">Who I am?</h4>
                             
                             <p class="pt-3">I'm a passionate Brazilian web developer with a keen eye for crafting captivating user experiences. With a primary focus on front-end development, I specialize in turning ideas into intuitive and visually stunning digital solutions.</p>
                             
                             <div class="text-end">
-                                <a href="#" class="btn main-btn"  data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Read more</a>
+                                <a href="#" class="btn main-btn border"  data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Read more</a>
                             </div>
                             
                         </div>
@@ -153,13 +165,13 @@
             
             <h2 class="fs-2 text-center my-5">What have I done</h2>
             
-            <div class="row mx-2 pb-5 gap-4 justify-content-center">
+            <div class="row mx-2 pb-5 mb-5 gap-4 justify-content-center">
                 
                 <div class="col-10 col-md-8 col-lg-5">
                     <div class="card bg-dark project-card">
                         <img src="./assets/images/serenatto-coffe-shop/Screenshot from 2024-04-09 19-49-44.png" class="card-img-top" alt="...">
                         <div class="card-body p-2 text-end">
-                            <a href="#" class="btn main-btn">More details</a>
+                            <a href="#" class="btn main-btn border">More details</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +180,7 @@
                     <div class="card bg-dark project-card">
                         <img src="./assets/images/meteora/Screenshot from 2024-04-09 19-52-17.png" class="card-img-top" alt="...">
                         <div class="card-body  p-2 text-end">
-                            <a href="#" class="btn main-btn">More details</a>
+                            <a href="#" class="btn main-btn border">More details</a>
                         </div>
                     </div>
                 </div>
@@ -177,7 +189,7 @@
                     <div class="card bg-dark project-card">
                         <img src="./assets/images/alura-plus/Screenshot from 2024-04-09 20-03-57.png" class="card-img-top" alt="...">
                         <div class="card-body  p-2 text-end">
-                            <a href="#" class="btn main-btn">More details</a>
+                            <a href="#" class="btn main-btn border">More details</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +198,7 @@
                     <div class="card bg-dark project-card">
                         <img src="./assets/images/regional-bom-demais/Screenshot from 2024-04-09 20-08-41.png" class="card-img-top" alt="...">
                         <div class="card-body  p-2 text-end">
-                            <a href="#" class="btn main-btn">More details</a>
+                            <a href="project-regional.html" class="btn main-btn border">More details</a>
                         </div>
                     </div>
                 </div>
@@ -194,16 +206,37 @@
             
         </section>
 
-        <!-- Contacts -->
-        <section id="contacts" class="background d-flex flex-column justify-content-center">
-
-            <div class="row">
-               
-            </div>
-        </section>
+        
     </main>
     
-    
+    <footer>
+
+        <!-- Contacts -->
+        <section id="contacts" class="container text-center mt-5">
+            <div class="d-flex gap-5 justify-content-center">
+                <a class="footer-link" href="https://www.instagram.com/webdev.larissa/">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+                <a class="footer-link" href="https://github.com/maria-larissa">
+                    <i class="bi bi-github fs-3"></i>
+                </a>
+
+                <a class="footer-link" href="www.linkedin.com/in/maria-larissa-andrade">
+                    <i class="bi bi-linkedin fs-3"></i>
+                </a>
+
+                <a class="footer-link" href="mailto:webdevlarissa@gmail.com">
+                    <i class="bi bi-envelope-at fs-3"></i>
+                </a>
+            </div>
+        </section>
+
+        <div class="my-4 pb-2">
+            <p class="text-center mb-2">Thanks for your Attention :)</p>
+            <p class="text-center">Developed by WebDevLarissa</p>
+        </div>
+
+    </footer>
     
     <!-- Canva about me -->
     <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
@@ -222,7 +255,7 @@
             <p> <strong>Let's collaborate and bring your digital vision to life!</strong></p>
             
             <div class="text-end">
-                <a href="#contacts" class="btn main-btn"> Contact me</a>
+                <a href="#contacts" class="btn main-btn border"> Contact me</a>
             </div>
             
         </div>
@@ -238,7 +271,17 @@
     
     <!-- referência imagem2 fundo = <a href="https://www.freepik.com/free-photo/minimalist-monochromatic-blue-texture_10072621.htm">Image by freepik</a>   -->
     
+
+    <!-- Referencia imagem display tablet e celular 
+    <a href="https://www.freepik.com/free-photo/smartphone-tablet-minimal-displays_29802664.htm#fromView=image_search_similar&page=1&position=32&uuid=171227d5-b04c-4542-95a9-914fbb328ef1">Image by freepik</a>
+    -->
+
+    <!-- referência imagem display laptop 
+    <a href="https://www.freepik.com/free-photo/mug-laptop-office-environment_35240217.htm#fromView=image_search_similar&page=2&position=33&uuid=171227d5-b04c-4542-95a9-914fbb328ef1">Image by Vectonauta on Freepik</a>
+    -->
     
+    <!-- referencia laptop display de frente
+    <a href="https://www.freepik.com/free-vector/screen-tv-mockup_835105.htm#fromView=search&page=1&position=0&uuid=672832d0-e576-414c-87f9-c896c49cb222">Image by Layerace on Freepik</a> -->
     
     
     
